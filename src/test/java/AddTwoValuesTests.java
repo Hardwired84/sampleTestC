@@ -11,32 +11,38 @@ import static junit.framework.TestCase.assertEquals;
 
 public class AddTwoValuesTests {
 
-    Calculator calc = new Calculator();
+  Calculator calc = new Calculator();
 
-    @Before
-    public void consolePrint() {
-        System.out.println("Tests started!!! ");
-    }
+  @Before
+  public void consolePrint() {
+    System.out.println("Tests started!!! ");
+  }
 
-    @Test
-    public void testAddTwoPositiveValues() {
-        assertEquals("10 + 5 must be 15", 15, calc.add(10, 5));
-    }
+  @Test
+  public void testAddTwoPositiveValues() {
+    int a = 10;
+    int b = 5;
+    int exp = 15;
+    assertEquals("10 + 5 must be 15", 15, calc.add(10, 5));
+  }
 
-    @Test
-    public void testAddTwoNegativeValues() {
-        assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
-    }
+  @Test
+  public void testAddTwoNegativeValues() {
+      int a = -10;
+      int b = -5;
+      int exp = -15;
+    assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
+  }
 
-    //TODO
-    //add new tests for add() method
+  @Test
+  //add new tests for add() method
 
-    //TODO
-    //add tests for new methods
+  //TODO
+  //add tests for new methods
 
-    @After
-    public void consolePrintAfter() {
-        System.out.println("Tests finished!!!");
+  @After
+  public void consolePrintAfter() {
+    System.out.println("Tests finished!!!");
 
-    }
+  }
 }
