@@ -1,6 +1,3 @@
-/**
- * Created by kate on 1/12/16.
- */
 
 public class Calculator {
 
@@ -8,23 +5,26 @@ public class Calculator {
     }
 
     public int add(int a, int b) {
-
         return a + b;
     }
 
-    public int multiply(int a, int b) {
-
+    public double multiply(double a, double b) {
         return a * b;
     }
 
-    //TODO
-    //add methods for multiply, division, subtraction, square root, x^2
+    public double division(int a, int b) {
+        return a / b;
+    }
 
+    public int subtraction(int a, int b) {
+        return a - b;
+    }
+
+    public double squareRoot(double c) {
+        return (double) Math.sqrt(c);
+    }
+
+    public double xSecondExposition(double x) {
+        return (double) Math.pow(x, 2);
+    }
 }
-
-
-
-
-
-
-
